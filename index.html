@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <h1 id="name">ViaCEP</h1>
+        <section id="search-container">
+            <em id=search-text><label for="search-input">Consulte aqui o seu CEP:</label></em>
+            <input type="text" id="search-input" placeholder="xxxxx-xxx">
+            <div id="search">
+                <div class="behind"></div>
+                <div class="text">Consultar</div>
+            </div>
+        </section>
+        <section id="response-search">
+            <span id="distric-text">Bairro</span>
+            <input type="text" id="district-input" disabled>
+            <span id="street-text">Logradouro</span>
+            <input type="text" id="street-input" disabled>
+        </section>
+        <footer>
+            <h2>Desenvolvido por Fernando Bonatto 🖤</h2>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
