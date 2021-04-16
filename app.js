@@ -39,7 +39,8 @@ function handleCEP() {
         return
     } 
     if(value.length === 8) {
-        value = search.value.replace(/^(\d{5})(\d{3})$/, '$1-$2')
+        value = search.value.replace(/^(\d{5})(\d{3})/, '$1-$2')
+        value = value.replace(/[^\d-]/g, '')
     }
     search.value = value
 }
